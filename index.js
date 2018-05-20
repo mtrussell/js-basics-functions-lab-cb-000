@@ -16,15 +16,7 @@ function distanceFromHqInFeet(street) {
 
 
 function distanceTravelledInFeet(start, end) {
-  const flip = (end - start) * 264;
-  const flop = (start - end) * 264;
-  return start < end ? flip : flop;
-  /*return upOrDown
-  if (start < end) {
-    return (end - start) * 264;
-  } else {
-    return (start - end) * 264;
-  }*/
+  return start < end ? (end - start) * 264 : (start - end) * 264;
 }
 
 
