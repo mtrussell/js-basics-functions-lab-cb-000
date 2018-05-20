@@ -19,12 +19,14 @@ function distanceTravelledInFeet(start, end) {
 function calculatesFarePrice(start, end) {
   let fare;
   const feet = distanceTravelledInFeet(start, end);
-  // switch () {
-  //   case one:
-  //     break;
-  //   case two:
-  //     break;
-  //   default:
-  //     break;
-  // }
+  const discount = feet - 400;
+  if (feet < 400) {
+    return 
+  } else if (feet > 400 && feet < 2000) {
+    return discount * .02;
+  } else if (feet > 2000 && feet < 2500) {
+    return 25;
+  } else if (feet > 2500) {
+    return 'cannot travel that far';
+  }
 }
