@@ -31,12 +31,12 @@ function distanceTravelledInFeet(start, end) {
 function calculatesFarePrice(start, end) {
   let fare;
   const feet = distanceTravelledInFeet(start, end);
-  switch () {
-    case one:
-      break;
-    case two:
-      break;
-    default:
-      break;
-  }
+  // switch () {
+  //   case one:
+  //     break;
+  //   case two:
+  //     break;
+  //   default:
+  //     break;
+  // }
 }
