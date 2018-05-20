@@ -15,8 +15,12 @@ function distanceFromHqInFeet(street) {
 }
 
 
-function distanceTravelledInFeet() {
-
+function distanceTravelledInFeet(start, end) {
+  if (start < end) {
+    return end - start;
+  } else {
+    return start - end;
+  }
 }
 
 
