@@ -4,17 +4,14 @@ function distanceFromHqInBlocks(street) {
   return street < 42 ? 42 - street : street - 42;
 }
 
-
 function distanceFromHqInFeet(street) {
   const blocks = distanceFromHqInBlocks(street);
   return blocks * 264;
 }
 
-
 function distanceTravelledInFeet(start, end) {
   return start < end ? (end - start) * 264 : (start - end) * 264;
 }
-
 
 function calculatesFarePrice(start, end) {
   let fare;
