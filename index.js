@@ -16,7 +16,7 @@ function distanceFromHqInFeet(street) {
 
 
 function distanceTravelledInFeet(start, end) {
-  return start < end ? (end - start) * 264 : return (start - end) * 264;
+  return start < end ? (end - start) * 264 : (start - end) * 264;
   // if (start < end) {
   //   return (end - start) * 264;
   // } else {
@@ -28,5 +28,5 @@ function distanceTravelledInFeet(start, end) {
 function calculatesFarePrice(start, end) {
   let fare;
   const feet = distanceTravelledInFeet(start, end);
-  switch 
+  switch
 }
