@@ -16,14 +16,17 @@ function distanceFromHqInFeet(street) {
 
 
 function distanceTravelledInFeet(start, end) {
-  if (start < end) {
-    return (end - start) * 264;
-  } else {
-    return (start - end) * 264;
-  }
+  return start < end ? (end - start) * 264 : return (start - end) * 264;
+  // if (start < end) {
+  //   return (end - start) * 264;
+  // } else {
+  //   return (start - end) * 264;
+  // }
 }
 
 
-function calculatesFarePrice(start, destination) {
-
+function calculatesFarePrice(start, end) {
+  let fare;
+  const feet = distanceTravelledInFeet(start, end);
+  switch 
 }
